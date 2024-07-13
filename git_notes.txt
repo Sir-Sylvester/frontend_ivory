@@ -7,3 +7,8 @@ git log:
 
 Shows the commit history of the repository.
 Displays a list of all the commits along with details like commit hash, author, date, and commit message.
+
+git commit -m:
+
+Records changes in the repository with a message describing what was done.
+The -m flag allows you to add a commit message directly in the command line.

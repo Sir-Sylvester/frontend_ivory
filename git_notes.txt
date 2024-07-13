@@ -1,0 +1,4 @@
+git init:
+
+Initializes a new Git repository in the current directory.
+Creates a .git directory that tracks the version history of your project.

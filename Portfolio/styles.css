@@ -1,0 +1,245 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Heebo", sans-serif;
+  line-height: 1.6;
+  color: #21243d;
+  max-width: 1152px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  padding: 27px 0;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav ul li {
+  margin-left: 33px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+#intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 140px 0 70px;
+}
+
+#intro h1 {
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 40px;
+}
+
+#intro p {
+  font-size: 16px;
+  max-width: 500px;
+  margin-bottom: 38px;
+}
+
+#intro button {
+  background-color: #ff6464;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.profile-pic {
+  width: 243px;
+  height: 243px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+#recent-posts {
+  display: flex; /* Ensures child posts are laid out horizontally */
+  justify-content: space-between; /* Distributes spacing between posts */
+  align-items: flex-start; /* Aligns posts at their top edge */
+  background-color: #edf7fa; /* Sets the background color for the container */
+  padding: 32px 20px; /* Padding around the posts inside the container */
+  margin-bottom: 20px;
+}
+
+#recent-posts h2 {
+  font-size: 22px;
+  margin-bottom: 22px; /* Space between title and posts */
+}
+
+.posts-container {
+  display: flex;
+  justify-content: space-between; /* Distributes space between posts */
+  gap: 20px; /* Ensures gap between the posts */
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f4f4f4; /* Light gray background for the container */
+  border-radius: 8px; /* Rounded corners for the container */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for some depth */
+}
+
+.post {
+  flex: 1;
+  width: 48%; /* Width of each post to ensure they fit side by side */
+  background-color: white; /* Background color for posts */
+  padding: 15px; /* Padding inside each post */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow for some depth */
+  border-radius: 8px; /* Rounded corners for aesthetic */
+  border: 40px;
+}
+
+.post:last-child {
+  margin-right: 0;
+}
+
+.post h3 {
+  font-size: 26px;
+  margin-bottom: 17px;
+}
+
+.post-meta {
+  font-size: 18px;
+  margin-bottom: 11px;
+}
+
+.post-meta span {
+  margin-right: 26px;
+}
+
+.post p {
+  font-size: 16px;
+}
+
+#featured-works {
+  padding: 15px 0 83px;
+}
+
+#featured-works h2 {
+  font-size: 22px;
+  margin-bottom: 22px;
+}
+
+.work {
+  display: flex;
+  margin-bottom: 31px;
+  padding-bottom: 31px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.work img {
+  width: 246px;
+  height: 180px;
+  border-radius: 6px;
+  margin-right: 18px;
+}
+
+.work-info h3 {
+  font-size: 30px;
+  margin-bottom: 16px;
+}
+
+.work-meta {
+  display: flex;
+  align-items: center;
+  margin-bottom: 17px;
+}
+
+.year {
+  background-color: #142850;
+  color: white;
+  font-weight: 900;
+  font-size: 18px;
+  padding: 0 10px;
+  border-radius: 16px;
+  margin-right: 26px;
+}
+
+.category {
+  color: #8695a4;
+  font-size: 20px;
+}
+
+.work-info p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+footer {
+  text-align: center;
+  padding: 51px 0;
+}
+
+.social-links {
+  margin-bottom: 26px;
+}
+
+.social-links a {
+  display: inline-block;
+  margin: 0 17px;
+}
+
+.social-links img {
+  width: 30px;
+  height: 30px;
+}
+
+footer p {
+  font-size: 14px;
+  color: #21243d;
+}
+
+@media (max-width: 768px) {
+  #intro {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 33px 0;
+  }
+
+  .profile-pic {
+    margin-bottom: 34px;
+  }
+
+  #intro h1 {
+    font-size: 32px;
+  }
+
+  .posts-container {
+    flex-direction: column;
+  }
+
+  .post {
+    max-width: 100%;
+    margin-right: 0;
+    margin-bottom: 17px;
+  }
+
+  .work {
+    flex-direction: column;
+  }
+
+  .work img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 17px;
+  }
+}
